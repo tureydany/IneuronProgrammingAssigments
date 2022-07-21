@@ -12,14 +12,14 @@ def celsius_to_fahrenheit():
     f=(d*1.8)+32
     print("%0.00f celsius converted to %0.00f fahrenheit" %(d,f))
 
-#celsius_to_fahrenheit()
+celsius_to_fahrenheit()
 
 def calendar_func():
     year=int(input("Enter year"))
     month=int(input("Enter month"))
     print(calendar.month(year,month))
 
-#calendar_func()
+calendar_func()
 
 def quadratic_eq():
     a=float(input("Enter value for a :"))
@@ -35,3 +35,17 @@ def quadratic_eq():
 
 quadratic_eq()
 
+def swap():
+    x = int(input("Enter x value:"))
+    y = int(input("Enter y value"))
+
+    print("Before swapping: ")
+    print("Value of x : ", x, " and y : ", y)
+
+    # code to swap 'x' and 'y'
+    x, y = y, x
+
+    print("After swapping: ")
+    print("Value of x : ", x, " and y : ", y)
+
+swap()
